@@ -6,6 +6,18 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="animate-fade-in">
+          {/* Profile Photo */}
+          <div className="mb-8">
+            <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40 mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                alt="Profile"
+                className="w-full h-full rounded-full object-cover shadow-2xl glow-effect"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-accent/20"></div>
+            </div>
+          </div>
+
           {/* Professional Title */}
           <div className="mb-6">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">

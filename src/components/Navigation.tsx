@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,10 @@ const Navigation = () => {
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
     { href: "#experience", label: "Experience" },
+    { href: "#education", label: "Education" },
+    { href: "#activities", label: "Activities" },
+    { href: "#certificates", label: "Certificates" },
+    { href: "#repositories", label: "Repositories" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -45,8 +50,9 @@ const Navigation = () => {
 
           {/* Social Links & Mobile Menu */}
           <div className="flex items-center space-x-4">
-            {/* Social Links - Desktop */}
+            {/* Social Links & Theme Toggle - Desktop */}
             <div className="hidden md:flex items-center space-x-2">
+              <ThemeToggle />
               {socialLinks.map((social) => (
                 <Button
                   key={social.href}
@@ -96,6 +102,7 @@ const Navigation = () => {
                 </a>
               ))}
               <div className="flex items-center space-x-2 px-3 py-2">
+                <ThemeToggle />
                 {socialLinks.map((social) => (
                   <Button
                     key={social.href}
