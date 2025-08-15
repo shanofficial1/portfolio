@@ -4,50 +4,64 @@ import { Trophy, Calendar, MapPin, Users, X } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-
+import useless from '../assets/useless.png'
+import python from '../assets/python.jpg' 
 const ActivitiesSection = () => {
   const [selectedActivity, setSelectedActivity] = useState<any>(null);
 
   const activities = [
     {
-      id: 1,
-      title: "Tech Innovation Hackathon 2024",
-      type: "Hackathon",
-      date: "March 2024",
-      location: "Kochi, Kerala",
-      participants: "200+ developers",
-      achievement: "2nd Place",
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop",
-      description: "48-hour hackathon focused on sustainable technology solutions. Built a carbon footprint tracker app using React and Node.js.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      details: "Developed an innovative solution for tracking personal carbon footprint with real-time analytics and gamification features."
+      
+  id: 1,
+  title: "Useless 2.0 Hackathon",
+  type: "Hackathon",
+  date: "August 2025",
+  location: "KUC Mangatparamb ",
+  participants: "150+ developers",
+  achievement: "Participant / Completed Project",
+  image: useless, // replace with your actual image import
+  description: "Hackathon organized by TinkerHub focused on creative and out-of-the-box technology solutions. Built a productivity automation app using React and Node.js.",
+  technologies: [
+  "React",
+  "Vite",
+  "Tailwind CSS",
+  "Gemini API Flash 2.0","JavaScript (ES6+)"],
+  details: "Developed a unique productivity automation tool that helps users automate repetitive tasks, with a focus on user-friendly design and real-time notifications."
     },
-    {
-      id: 2,
-      title: "Google Developer Student Clubs",
-      type: "Community",
-      date: "2023 - 2024",
-      location: "Virtual & Kannur",
-      participants: "500+ members",
-      achievement: "Core Team Member",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
-      description: "Active member of GDSC, organizing workshops and tech talks for fellow students.",
-      technologies: ["Leadership", "Event Management", "Teaching"],
-      details: "Organized 12+ workshops, mentored 50+ students, and led the mobile development track."
-    },
-    {
-      id: 3,
-      title: "Open Source Contribution Week",
-      type: "Open Source",
-      date: "October 2023",
-      location: "Remote",
-      participants: "Global community",
-      achievement: "15+ PRs merged",
-      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=300&fit=crop",
-      description: "Contributed to multiple open source projects during Hacktoberfest.",
-      technologies: ["JavaScript", "Python", "Documentation"],
-      details: "Made significant contributions to React, Vue.js, and Python libraries, improving documentation and fixing bugs."
-    }
+
+   {
+  id: 2,
+  title: "Microcontroller Programming through Python",
+  type: "Workshop",
+  date: "July 2025",
+  location: "KUC Mangatparamb",
+  participants: "50+ students",
+  achievement: "Participant / Completed Workshop",
+  image: python, // replace with your actual image import
+  description: "Hands-on workshop at KUC Mangatparamb focused on programming microcontrollers using Python. Participants learned to control LEDs, sensors, and other peripherals through practical exercises.",
+  technologies: [
+    "Python",
+    "Microcontrollers",
+    "GPIO Programming",
+    "Circuit Simulation",
+    "Thonny IDE"
+  ],
+  details: "Guided students through programming microcontrollers, interfacing sensors and actuators, and building small interactive projects using Python for hardware control."
+}
+
+    // {
+    //   id: 3,
+    //   title: "Open Source Contribution Week",
+    //   type: "Open Source",
+    //   date: "October 2023",
+    //   location: "Remote",
+    //   participants: "Global community",
+    //   achievement: "15+ PRs merged",
+    //   image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=300&fit=crop",
+    //   description: "Contributed to multiple open source projects during Hacktoberfest.",
+    //   technologies: ["JavaScript", "Python", "Documentation"],
+    //   details: "Made significant contributions to React, Vue.js, and Python libraries, improving documentation and fixing bugs."
+    // }
   ];
 
   return (
@@ -91,14 +105,14 @@ const ActivitiesSection = () => {
                     className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary text-primary-foreground">
+                    {/* <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary text-primary-foreground">
                       {activity.type}
-                    </span>
+                    </span> */}
                   </div>
                   <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 text-xs font-semibold rounded-full bg-accent text-accent-foreground">
+                    {/* <span className="px-3 py-1 text-xs font-semibold rounded-full bg-accent text-accent-foreground">
                       {activity.achievement}
-                    </span>
+                    </span> */}
                   </div>
                 </div>
                 

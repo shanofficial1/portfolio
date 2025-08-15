@@ -1,28 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Calendar, Download, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Facebook, Calendar, Download, ExternalLink } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "developer@example.com",
-      href: "mailto:developer@example.com",
+      value: "shanr1164@gmail.com",
+      href: "mailto:shanr1164@gmail.com",
       description: "Send me an email"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 85907959420",
+      href: "tel:+918590795942",
       description: "Give me a call"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Kerala, India",
-      href: "https://maps.google.com/?q=Kerala,India",
+      value: "Azhikoe,Kannur",
+      href: "https://maps.app.goo.gl/btMbcXoFpcwdSgAY8",
       description: "Where I'm based"
     }
   ];
@@ -31,22 +31,22 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      value: "@yourusername",
-      href: "https://github.com/yourusername",
+      value: "@shan-official1",
+      href: "https://github.com/shan-official1",
       description: "Check out my code"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Your Name",
-      href: "https://linkedin.com/in/yourprofile",
+      value: "Shan A",
+      href: "https://linkedin.com/in/shanofficial",
       description: "Professional network"
     },
     {
-      icon: Twitter,
+      icon: Facebook,
       label: "Twitter",
-      value: "@yourusername",
-      href: "https://twitter.com/yourusername",
+      value: "Shan A",
+      href: "https://www.facebook.com/profile.php?id=61561053655193",
       description: "Follow my thoughts"
     }
   ];
@@ -154,15 +154,9 @@ const ContactSection = () => {
                 {/* Quick Actions */}
                 <div className="pt-6 border-t border-border space-y-3">
                   <Button variant="outline" size="lg" className="w-full justify-start" asChild>
-                    <a href="/resume.pdf" download>
+                    <a href="https://drive.google.com/file/d/1xPuNSv2FRkek_ecns5MzKdxVK16T7Ruq/view?usp=sharing" target="_blank" download>
                       <Download className="h-4 w-4 mr-2" />
                       Download Resume
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="lg" className="w-full justify-start" asChild>
-                    <a href="https://calendly.com/yourname" target="_blank" rel="noopener noreferrer">
-                      <Calendar className="h-4 w-4 mr-2" />
-                      Schedule a Call
                     </a>
                   </Button>
                 </div>

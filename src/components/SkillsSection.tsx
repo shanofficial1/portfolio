@@ -8,36 +8,21 @@ const SkillsSection = () => {
       title: "Frontend Development",
       icon: "🎨",
       skills: [
-        { name: "React", level: 95, years: 4 },
-        { name: "TypeScript", level: 90, years: 3 },
-        { name: "Next.js", level: 85, years: 2 },
-        { name: "Vue.js", level: 80, years: 2 },
-        { name: "Tailwind CSS", level: 95, years: 3 },
-        { name: "SASS/SCSS", level: 85, years: 4 }
-      ]
+  { name: "React", level: 95, years: 1 },
+  { name: "Tailwind CSS", level: 90, years: 1 },
+  { name: "HTML5", level: 95, years: 1 },
+  { name: "CSS3", level: 95, years: 1 },
+  { name: "Responsive Design", level: 90, years: 1 },
+]
+
     },
     {
       title: "Backend Development",
       icon: "⚙️",
       skills: [
         { name: "Node.js", level: 90, years: 4 },
-        { name: "Python", level: 85, years: 3 },
         { name: "Express.js", level: 90, years: 4 },
-        { name: "Django", level: 75, years: 2 },
-        { name: "PostgreSQL", level: 85, years: 3 },
         { name: "MongoDB", level: 80, years: 3 }
-      ]
-    },
-    {
-      title: "Cloud & DevOps",
-      icon: "☁️",
-      skills: [
-        { name: "AWS", level: 85, years: 3 },
-        { name: "Docker", level: 80, years: 2 },
-        { name: "Kubernetes", level: 70, years: 1 },
-        { name: "CI/CD", level: 85, years: 3 },
-        { name: "Terraform", level: 75, years: 2 },
-        { name: "GitHub Actions", level: 90, years: 3 }
       ]
     },
     {
@@ -45,34 +30,34 @@ const SkillsSection = () => {
       icon: "🛠️",
       skills: [
         { name: "Git", level: 95, years: 5 },
-        { name: "Jest", level: 85, years: 3 },
-        { name: "Figma", level: 80, years: 2 },
-        { name: "Agile/Scrum", level: 90, years: 4 },
-        { name: "GraphQL", level: 80, years: 2 },
-        { name: "REST APIs", level: 95, years: 4 }
+    { name: "REST APIs", level: 95, years: 4 },
+    { name: "Postman", level: 90, years: 3 },
+    { name: "VS Code", level: 95, years: 5 },
+    { name: "Chrome DevTools", level: 90, years: 4 },
+    { name: "npm / Yarn", level: 90, years: 3 },
       ]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2023",
-      status: "Active"
-    },
-    {
-      name: "React Developer Certification",
-      issuer: "Meta",
-      year: "2022",
-      status: "Active"
-    },
-    {
-      name: "Kubernetes Application Developer",
-      issuer: "Cloud Native Computing Foundation",
-      year: "2023",
-      status: "Active"
-    }
+    name: "BCA Degree",
+    issuer: "Kannur University",
+    year: "2025",
+    status: "Completed"
+  },
+  {
+    name: "MERN Stack Certification",
+    issuer: "Self / Online Courses",
+    year: "2025",
+    status: "Active"
+  },
+  {
+    name: "Frontend Development Certification",
+    issuer: "Self / Online Courses",
+    year: "2025",
+    status: "Active"
+  }
   ];
 
   const getSkillColor = (level: number) => {

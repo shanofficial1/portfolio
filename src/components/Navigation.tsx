@@ -10,18 +10,18 @@ const Navigation = () => {
     { href: "#home", label: "Home" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experience" },
+    // { href: "#experience", label: "Experience" },
     { href: "#education", label: "Education" },
     { href: "#activities", label: "Activities" },
-    { href: "#certificates", label: "Certificates" },
-    { href: "#repositories", label: "Repositories" },
+    // { href: "#certificates", label: "Certificates" },
+    // { href: "#repositories", label: "Repositories" },
     { href: "#contact", label: "Contact" },
   ];
 
   const socialLinks = [
-    { href: "https://github.com", icon: Github, label: "GitHub" },
-    { href: "https://linkedin.com", icon: Linkedin, label: "LinkedIn" },
-    { href: "mailto:contact@example.com", icon: Mail, label: "Email" },
+    { href: "https://github.com/shanofficial1", icon: Github, label: "GitHub" },
+    { href: "www.linkedin.com/in/shanofficial", icon: Linkedin, label: "LinkedIn" },
+    { href: "mailto:shanr1164@gmail.com", icon: Mail, label: "Email" },
   ];
 
   return (
@@ -30,7 +30,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-gradient">DevPortfolio</span>
+          <a href="#home">
+            <span className="text-xl font-bold text-gradient">Shan A</span></a>
           </div>
 
           {/* Desktop Navigation */}
@@ -52,7 +53,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             {/* Social Links & Theme Toggle - Desktop */}
             <div className="hidden md:flex items-center space-x-2">
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               {socialLinks.map((social) => (
                 <Button
                   key={social.href}

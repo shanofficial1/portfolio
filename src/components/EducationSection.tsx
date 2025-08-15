@@ -4,24 +4,43 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const EducationSection = () => {
   const education = [
-    {
-      id: 1,
-      degree: "Master of Business Administration (MBA)",
-      level: "Postgraduate",
-      institution: "Dr. P.K. Rajan Memorial Campus, Kannur University",
-      duration: "2025 - 2027",
-      location: "Palathadam, Nileshwaram, Kerala",
-      status: "In Progress"
-    },
-    {
-      id: 2,
-      degree: "Bachelor of Computer Science",
-      level: "Undergraduate", 
-      institution: "University of Technology",
-      duration: "2020 - 2024",
-      location: "Tech City, Kerala",
-      status: "Completed"
-    }
+  {
+  id: 1,
+  degree: "Master of Computer Applications (MCA)",
+  level: "Postgraduate",
+  institution: "Kannur University Campus (KUC)",
+  duration: "2025 - 2027",
+  location: "Mangattuparamba, Kannur, Kerala",
+  status: "In Progress"
+},
+{
+  id: 2,
+  degree: "Bachelor of Computer Applications (BCA)",
+  level: "Undergraduate",
+  institution: "Amsteck Arts & Science College",
+  duration: "2022 - 2025",
+  location: "Kannur, Kerala",
+  status: "Completed"
+},
+{
+  id: 3,
+  degree: "Higher Secondary Education (Plus Two)",
+  level: "Higher Secondary",
+  institution: "Government Higher Secondary School, Pallikunnu",
+  duration: "2020 - 2022",
+  location: "Pallikunnu, Kannur, Kerala",
+  status: "Completed"
+},
+{
+  id: 4,
+  degree: "Secondary School Leaving Certificate (SSLC)",
+  level: "Secondary",
+  institution: "Azhikode High School",
+  duration: "2019 - 2020",
+  location: "Azhikode, Kannur, Kerala",
+  status: "Completed"
+}
+
   ];
 
   const containerVariants = {

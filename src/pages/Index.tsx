@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -9,6 +8,7 @@ import CertificatesSection from "@/components/CertificatesSection";
 import GitHubReposSection from "@/components/GitHubReposSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { HeroSection } from "@/components/HeroSection";
 
 const Index = () => {
   return (
@@ -18,11 +18,11 @@ const Index = () => {
         <HeroSection />
         <ProjectsSection />
         <SkillsSection />
-        <ExperienceSection />
+        {/* <ExperienceSection /> */}
         <EducationSection />
         <ActivitiesSection />
-        <CertificatesSection />
-        <GitHubReposSection />
+        {/* <CertificatesSection /> */}
+        {/* <GitHubReposSection /> */}
         <ContactSection />
       </main>
       <Footer />

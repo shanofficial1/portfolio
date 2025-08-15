@@ -8,56 +8,44 @@ import { Button } from '@/components/ui/button';
 const CertificatesSection = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<any>(null);
 
-  const certificates = [
-    {
-      id: 1,
-      title: "AWS Certified Developer - Associate",
-      issuer: "Amazon Web Services",
-      date: "December 2023",
-      credentialId: "AWS-DEV-2023-12345",
-      thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
-      fullImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop",
-      description: "Validates technical expertise in developing and maintaining applications on the AWS platform.",
-      skills: ["AWS Lambda", "DynamoDB", "S3", "CloudFormation", "API Gateway"],
-      verificationUrl: "https://aws.amazon.com/verification"
-    },
-    {
-      id: 2,
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "October 2023",
-      credentialId: "META-REACT-2023-67890",
-      thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
-      fullImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop",
-      description: "Advanced React concepts including hooks, context, performance optimization, and testing.",
-      skills: ["React", "Hooks", "Context API", "Testing", "Performance"],
-      verificationUrl: "https://meta.com/verification"
-    },
-    {
-      id: 3,
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "September 2023",
-      credentialId: "GCP-DEV-2023-11111",
-      thumbnail: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400&h=300&fit=crop",
-      fullImage: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&h=600&fit=crop",
-      description: "Expertise in designing, building, and deploying applications on Google Cloud Platform.",
-      skills: ["GCP", "Kubernetes", "Cloud Functions", "BigQuery", "Cloud Storage"],
-      verificationUrl: "https://cloud.google.com/verification"
-    },
-    {
-      id: 4,
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      date: "August 2023",
-      credentialId: "MONGO-DEV-2023-22222",
-      thumbnail: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop",
-      fullImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=600&fit=crop",
-      description: "Proficiency in MongoDB database design, querying, and application development.",
-      skills: ["MongoDB", "Aggregation", "Indexing", "Sharding", "Replica Sets"],
-      verificationUrl: "https://mongodb.com/verification"
-    }
-  ];
+const certificates = [
+  {
+    id: 1,
+    title: "BCA Degree Certificate",
+    issuer: "Kannur University",
+    date: "2025",
+    credentialId: "BCA-2025-001",
+    thumbnail: "https://via.placeholder.com/400x300.png?text=BCA+Certificate",
+    fullImage: "https://via.placeholder.com/800x600.png?text=BCA+Certificate",
+    description: "Bachelor of Computer Applications degree validating completion of undergraduate education in computer applications and software development.",
+    skills: ["Programming", "Web Development", "Database Management", "Software Engineering"],
+    verificationUrl: "#"
+  },
+  {
+    id: 2,
+    title: "MERN Stack Certification",
+    issuer: "Self / Online Courses",
+    date: "2025",
+    credentialId: "MERN-2025-002",
+    thumbnail: "https://via.placeholder.com/400x300.png?text=MERN+Certificate",
+    fullImage: "https://via.placeholder.com/800x600.png?text=MERN+Certificate",
+    description: "Certification demonstrating expertise in full-stack web development using MongoDB, Express.js, React, and Node.js.",
+    skills: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs"],
+    verificationUrl: "#"
+  },
+  {
+    id: 3,
+    title: "Frontend Development Certification",
+    issuer: "Self / Online Courses",
+    date: "2025",
+    credentialId: "FRONTEND-2025-003",
+    thumbnail: "https://via.placeholder.com/400x300.png?text=Frontend+Certificate",
+    fullImage: "https://via.placeholder.com/800x600.png?text=Frontend+Certificate",
+    description: "Certification validating skills in React, Tailwind CSS, SASS/SCSS, and responsive frontend development.",
+    skills: ["React", "Tailwind CSS", "SASS/SCSS", "Responsive Design"],
+    verificationUrl: "#"
+  }
+];
 
   return (
     <section id="certificates" className="py-20 px-4">
