@@ -59,12 +59,12 @@ export const education = [
 
 export const projects = [
   {
-    title: "Analytics Dashboard",
+    title: "CharityLink-Crowdfunding Platform",
     description:
-      "A modular analytics dashboard with live charts and responsive cards built with React and Recharts.",
-    image: proj1,
+      "Is a Kerala-based crowdfunding platform that helps patients and families raise funds for medical treatment. It connects donors with genuine causes, ensuring transparent, quick, and secure contributions.",
+    image: "https://i.postimg.cc/3rmH681X/charitylink-media.jpg",
     demoUrl: "#",
-    tags: ["React", "Recharts", "Tailwind"],
+    tags: ["React.js", "Node.js","Express.js", "TailwindCss", "MongoDB"],
   },
 
 ];

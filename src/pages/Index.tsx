@@ -19,8 +19,8 @@ const Index = () => {
         <ProjectsSection />
         {/* <ActivitiesShowcase /> */}
         <SkillsSection />
-        <CertificatesSection />
-        <GitReposSection />
+        {/* <CertificatesSection /> */}
+        {/* <GitReposSection /> */}
         <ContactSection />
       </main>
       <Footer />
